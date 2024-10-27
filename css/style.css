@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  background-color: #ccc;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    padding: 10px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    max-width: 422px;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    height: 100px;
+    width: 106px;
+    border-radius: 3px;
+    font-size: 30px;
+    border: 3px solid black;
+}
+
+.clear {
+    flex-grow: 1;
+    background-color: #94a3b8;
+}
+
+.clear:active {
+    background-color: #666;
+}
+
+.zero {
+    flex-grow: 1;
+}
+
+.column {
+    background-color: goldenrod;
+}
+
+.column:active {
+    background-color: gold;
+}
+
+.display {
+    background-color: #fff;
+    font-size: 80px;
+    height: 80px;
+    max-width: 422px;
+    padding: 8px;
+    text-align: end;
+    border: 6px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.number, .dot {
+    background-color: skyblue;
+}
+
+.number:active {
+    background-color: burlywood;
+}
+
+.dot:active {
+    background-color: burlywood;
+}
